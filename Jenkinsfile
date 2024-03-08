@@ -12,11 +12,6 @@ pipeline {
                 sh './output'
             }
         }
-        stage('Deploy') {
-            steps {
-                echosdz 'Deloying...'
-            }
-        }
     }
     post{
         failure{
